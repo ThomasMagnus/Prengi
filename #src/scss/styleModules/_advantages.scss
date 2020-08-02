@@ -1,0 +1,43 @@
+.advantages {
+	padding: 80px 0;
+	&__props {
+		display: flex;
+		justify-content: center;
+	}
+	&__prop {
+		width: 360px;
+		height: 255px;
+		background: url('../img/Layer_16_copy_4.png') right bottom no-repeat;
+		text-align: center;
+	}
+	&__img {
+		width: 192px;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+	&__text {
+		width: 178px;
+		margin: 0 auto;
+		font-size: 18px;
+	}
+	&__arrow {
+		margin-top: 50px;
+		text-align: center;
+	}
+	&__title {
+		text-align: center;
+		font-size: 48px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 33px;
+	}
+	.skill {
+		background: url('../img/Layer_17_copy.png') right bottom no-repeat;
+	}
+	.bold {
+		font-weight: 700;
+		width: 264px;
+	}
+}

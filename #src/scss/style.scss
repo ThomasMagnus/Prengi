@@ -1,0 +1,70 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	};
+};
+
+@import "fonts";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto-Light';
+	font-size: 14px;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+$main-color: #00c2f0;
+
+
+.button {
+	background-color: #00c2f0;
+	border-style: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 24px 46px;
+	margin-top: 40px;
+	text-transform: uppercase;
+	outline: none;
+	transition: all 0.2s linear;
+	&:hover {
+		box-shadow: 0 0 0 2px $main-color inset, 0 0 0 4px white inset
+	}
+}
+
+@mixin background($background) {
+	&::before {
+		content: '';
+		background: $background center center/cover no-repeat;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	&::after {
+		content: '';
+		background: rgba(0, 0, 0, .6);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+}
+
+@import 'styleModules/header';
+@import 'styleModules/advantages';
+@import 'styleModules/decisions'

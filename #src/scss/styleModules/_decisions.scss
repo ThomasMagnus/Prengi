@@ -1,0 +1,38 @@
+.decisions {
+	padding: 80px 0 64px 0;
+	min-height: 890px;
+	position: relative;
+	@include background(url('../img/Layer_22.jpg'));
+	&__title {
+		color: #fff;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 700;
+		width: 618px;
+		margin: 0 auto;
+	}
+	&__list {
+		list-style-type: none;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		border: 1px solid #fff;
+		width: 843px;
+		margin: 32px auto;
+		padding: 7px 0;
+	}
+	&__item {
+		cursor: pointer;
+		padding: 0 36px;
+		transition: all 0.2s linear;
+		border-right: 1px solid rgba($color: #fff, $alpha: .4);
+		height: 50px;
+		line-height: 50px;
+		&:last-child {
+			border-right: none;
+		}
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
