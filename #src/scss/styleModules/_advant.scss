@@ -1,0 +1,52 @@
+.advant {
+	padding: 80px 0;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		font-size: 30px;
+		width: 371px;
+		text-align: center;
+	}
+	&__prop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 355px;
+		width: 570px;
+	}
+	&__subtitle {
+		color: #fff;
+		font-size: 23px;
+		width: 288px;
+		text-align: center;
+	}
+	&__images {
+		margin-top: 45px;
+		display: grid;
+		display: -ms-grid;
+		grid-template-columns: 570px 570px;
+		-ms-grid-columns: 570px 570px;
+	}
+	.clock {
+		background: url('../img/clock.png') center center/cover no-repeat;
+	}
+	.robot {
+		background: url('../img/robot.png') center center/cover no-repeat;
+	}
+	.globus {
+		background: url('../img/globus.png') center center/cover no-repeat;
+	}
+	.phone {
+		background: url('../img/phone.png') center center/cover no-repeat;
+	}
+	.human {
+		background: url('../img/human.png') center center/cover no-repeat;
+	}
+	.card {
+		background: url('../img/card.png') center center/cover no-repeat;
+	}
+}

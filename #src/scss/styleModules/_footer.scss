@@ -1,0 +1,32 @@
+.footer {
+	padding: 45px 0 40px 0;
+	background-color: #0082a1;
+	color: #fff;
+	&__top {
+		display: flex;
+	}
+	&__section {
+		margin: 40px;
+	}
+	.list {
+		margin-top: 5px;
+		li {
+			margin-top: 5px;
+		}
+		a {
+			color: #fff;
+			&:hover {
+				color: navy;
+				transition: 0.3s linear all;
+			}
+		}
+	}
+	&__bottom {
+		border-top: 1px solid #4da8bd;
+		text-align: center;
+		padding-top: 30px;
+		.small-text {
+			font-size: 10px;
+		}
+	}
+}

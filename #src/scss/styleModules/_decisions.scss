@@ -35,4 +35,32 @@
 			color: $main-color;
 		}
 	}
+	&__slider {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		.display {
+			margin-top: 37px;
+		}
+		.macbook {
+			position: absolute;
+			top: 0;
+			left: 96px;
+		}
+		.btn {
+			cursor: pointer;
+		}
+	}
+	&__prevBtn {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+	}
+
+	&__nextBtn {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+	}
 }

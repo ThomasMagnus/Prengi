@@ -42,6 +42,13 @@ $main-color: #00c2f0;
 	}
 }
 
+ul {
+	list-style-type: none;
+	a {
+		text-decoration: none;
+	}
+}
+
 @mixin background($background) {
 	&::before {
 		content: '';
@@ -67,4 +74,10 @@ $main-color: #00c2f0;
 
 @import 'styleModules/header';
 @import 'styleModules/advantages';
-@import 'styleModules/decisions'
+@import 'styleModules/decisions';
+@import 'styleModules/advant';
+@import 'styleModules/variables';
+@import 'styleModules/start';
+@import 'styleModules/footer';
+@import 'styleModules/company';
+@import 'styleModules/aboutUs';

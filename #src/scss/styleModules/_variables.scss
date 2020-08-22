@@ -1,0 +1,39 @@
+.variables {
+	padding: 80px 0 0 0;
+	min-height: 580px;
+	background: url('../img/8-layers.png') center center/cover no-repeat;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		color: #fff;
+		font-size: 30px;
+		width: 371px;
+		text-align: center;
+	}
+	&__props {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 138px;
+	}
+	&__prop {
+		flex: 0 1 480px
+	}
+	&__subtitle {
+		color: #fff;
+		font-size: 30px;
+		text-align: end;
+	}
+	.left {
+		text-align: end;
+	}
+	&__text {
+		color: #fff;
+		font-size: 18px;
+	}
+	.right {
+		text-align: start;
+	}
+}
